@@ -47,7 +47,7 @@
       <div class="w-1/2 h-56">
         <div
           class="un-photo border border-1 w-full h-full fixed"
-          style="background-image: url('../src/assets/my-pic.png'); --row-total: 5"
+          style="background-image: url('https://res.cloudinary.com/dwhyxh1zm/image/upload/v1695708038/my-pic_h9pcya.png'); --row-total: 5"
         >
           <img class="h-[60%] right-0 fixed" src="../assets/my-pic.png" />
 
