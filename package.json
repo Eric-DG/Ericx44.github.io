@@ -8,8 +8,8 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "deploy": "sh deploy.sh"
+    "format": "prettier --write src/"
+
   },
   "dependencies": {
     "flowbite": "^1.8.1",

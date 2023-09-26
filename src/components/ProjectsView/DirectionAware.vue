@@ -61,7 +61,7 @@ I used Nuxt.js for the front end and Express.js with PostgreSQL and Prisma for t
       }
       .container .box {
         position: relative;
-        width: 275px;
+        width: 300px;
         height: 200px;
         background: #000;
         transition: 0.5s;

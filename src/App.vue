@@ -89,24 +89,18 @@ onMounted(() => {
           <li>
             <a
               href="/"
-              class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Home</a
             >
           </li>
           <li>
             <a
               href="/projects"
-              class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >Projects</a
             >
           </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Contact</a
-            >
-          </li>
+        
         </ul>
       </div>
     </div>
@@ -117,11 +111,11 @@ onMounted(() => {
     class="bg-primary z-50 fixed bottom-0 w-full h-10 shadow-md left-1/2 transform -translate-x-1/2 mt-5 border-secondary dark:bg-gray-900"
   >
     <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm p-2 text-white sm:text-center dark:text-gray-400"
-        >© 2023 <a href="#" class="hover:underline">De Guzman, Eric Brian</a>. All Rights Reserved.
+      <span class="text-sm p-2 font-montserrat text-white sm:text-center dark:text-gray-400"
+        >© 2023 <a href="#" class="font-montserrat hover:underline">De Guzman, Eric Brian</a>. All Rights Reserved.
       </span>
       <div class="flex mt-4 mr-5 space-x-5 sm:justify-center sm:mt-0">
-        <a href="" class="text-gray-200 hover:text-gray-900 dark:hover:text-white">
+        <a href="mailto:eric.deguzman0012@gmail.com" class="text-gray-200 hover:text-gray-900 dark:hover:text-white">
           <svg
             class="w-4 h-4"
             xmlns="http://www.w3.org/2000/svg"
