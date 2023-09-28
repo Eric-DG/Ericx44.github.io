@@ -12,15 +12,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- navbar -->
   <nav
-    class="bg-primary z-50 bg-opacity-50 shadow-md fixed left-1/2 transform -translate-x-1/2 w-[95%] mt-5 rounded-3xl border-secondary dark:bg-gray-900"
+    class="bg-primary z-50 bg-opacity-50 shadow-md fixed left-1/2 transform -translate-x-1/2 w-[90%] h-[3.5rem] md:h-[5.5rem] md:w-[95%] mt-5 rounded-3xl border-secondary dark:bg-gray-900"
   >
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
       <a href="/" class="flex items-center">
-        <img class="h-16 fixed" src="../src/assets/E.png" />
+        <img class="h-10 ml-3 md:h-14 md:ml-0" src="../src/assets/E.png" />
         <svg
-          class="ml-24"
+          class="ml-4 hidden md:block md:ml-4"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -30,19 +29,20 @@ onMounted(() => {
           <path
             fill-rule="evenodd"
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-          /></svg
-        ><span
-          class="ml-2 self-center text-xs text-white font-black whitespace-nowrap dark:text-white"
-          >+639 495 948 969</span
+          />
+        </svg>
+        <span
+          class="ml-4 hidden md:block md:self-center text-white text-[.8rem] md:text-white whitespace-nowrap dark:text-white"
         >
-        <div class="mx-5 text-white">|</div>
+          +639 495 948 969
+        </span>
+        <div class="mx-2 hidden md:block md:mx-5 text-white">|</div>
         <svg
-          class="w-4 h-4"
+          class="hidden md:block"
           xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="100"
-          height="100"
+          width="16"
+          height="16"
+          fill="#ffffff"
           viewBox="0 0 50 50"
         >
           <path
@@ -50,12 +50,13 @@ onMounted(() => {
             clip-rule="evenodd"
             d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"
             fill="#ffffff"
-          ></path>
+          />
         </svg>
         <span
-          class="ml-2 self-center text-xs text-white font-black whitespace-nowrap dark:text-white"
-          >eric.deguzman0012@gmail.com</span
+          class="ml-4 hidden md:block md:self-center text-white text-[0.8rem] md:text-white dark:text-white"
         >
+          eric.deguzman0012@gmail.com
+        </span>
       </a>
 
       <button
@@ -70,7 +71,7 @@ onMounted(() => {
           class="w-5 h-5"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
+          fill="fffff"
           viewBox="0 0 17 14"
         >
           <path
@@ -79,43 +80,60 @@ onMounted(() => {
             stroke-linejoin="round"
             stroke-width="2"
             d="M1 1h15M1 7h15M1 13h15"
+            fill="fff"
           />
         </svg>
       </button>
-      <div class="hidden w-full bg-transparent md:block md:w-auto" id="navbar-default">
+
+      <div class="hidden w-full bg-primary md:bg-transparent md:block md:w-auto" id="navbar-default">
         <ul
           class="font-medium bg-transparent flex flex-col p-4 md:p-0 mt-4 border border-secondary md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <a
               href="/"
-              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Home</a
+              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-gray-200 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="/projects"
-              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-primary hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Projects</a
+              class="block py-2 pl-3 pr-4 text-white font-montserrat rounded hover:bg-gray-200 hover:text-primary md:hover:bg-transparent md:border-0 md:hover:text-pach md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >
+              Projects
+            </a>
           </li>
-        
         </ul>
       </div>
     </div>
   </nav>
+
   <RouterView />
 
   <footer
     class="bg-primary z-50 fixed bottom-0 w-full h-10 shadow-md left-1/2 transform -translate-x-1/2 mt-5 border-secondary dark:bg-gray-900"
   >
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm p-2 font-montserrat text-white sm:text-center dark:text-gray-400"
-        >© 2023 <a href="#" class="font-montserrat hover:underline">De Guzman, Eric Brian</a>. All Rights Reserved.
+    <div class="flex items-center">
+      <span
+        class="text-xs hidden md:block md:text-sm p-2 font-montserrat text-white sm:text-center dark:text-gray-400"
+        >© 2023</span
+      >
+      <a
+        href="#"
+        class="text-xs mt-1 md:text-sm p-2 font-montserrat text-white sm:text-center dark:text-gray-400"
+        >De Guzman, Eric Brian</a
+      >.
+      <span
+        class="text-xs hidden md:block md:text-sm p-2 font-montserrat text-white sm:text-center dark:text-gray-400 hover:underline"
+        >All Rights Reserved.
       </span>
-      <div class="flex mt-4 mr-5 space-x-5 sm:justify-center sm:mt-0">
-        <a href="mailto:eric.deguzman0012@gmail.com" class="text-gray-200 hover:text-gray-900 dark:hover:text-white">
+      <div class="flex mt-2 md:mt-4 mr-5 fixed right-5 space-x-5 sm:justify-center sm:mt-0">
+        <a
+          href="mailto:eric.deguzman0012@gmail.com"
+          class="text-gray-200 hover:text-gray-900 dark:hover:text-white"
+        >
           <svg
             class="w-4 h-4"
             xmlns="http://www.w3.org/2000/svg"
@@ -124,12 +142,12 @@ onMounted(() => {
             width="100"
             height="100"
             viewBox="0 0 50 50"
+            fill="currentColor"
           >
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"
-              fill="#ffffff"
             ></path>
           </svg>
           <span class="sr-only">Discord community</span>
@@ -145,12 +163,12 @@ onMounted(() => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="currentColor"
           >
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              fill="#ffffff"
             />
           </svg>
           <span class="sr-only">LinkedIn profile</span>
@@ -179,8 +197,10 @@ onMounted(() => {
   </footer>
 </template>
 
-<style>
+<style scoped>
 body {
   background-color: #181a1b;
 }
+
+/* Base font size for the logo text */
 </style>

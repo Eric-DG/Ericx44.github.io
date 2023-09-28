@@ -1,23 +1,25 @@
 <template>
-  <div class="h-full w-[1000px] mx-auto">
-    <div class="flex">
-      <div class="w-1/2 h-56"></div>
-      <div class="w-1/2 h-56"></div>
+  <div class="h-full w-[360px] md:w-[1000px] mx-auto">
+    <div class="flex flex-col-reverse md:flex-row">
+      <div class="h-12 w-full hidden md:block md:h-56"></div>
+      <div class="h-12 w-full hidden md:block md:h-56"></div>
     </div>
 
     <!-- 2nd flex -->
-    <div class="flex">
-      <div class="w-3/4 h-56">
-        <div class="font-anton text-6xl text-justify tracking-widest text-white">HELLO!</div>
-        <div class="font-anton text-6xl text-justify tracking-widest text-white">
+    <div class="flex mt-24 md:mt-0">
+      <div class="w-full p-5 mx-auto md:w-3/4 md:h-56">
+        <div class="text-4xl font-anton md:text-6xl text-justify tracking-widest text-white">
+          HELLO!
+        </div>
+        <div class="text-4xl font-anton md:text-6xl text-justify tracking-widest text-white">
           I AM ERIC BRIAN
         </div>
-        <div class="font-anton text-6xl text-justify tracking-widest text-white">
+        <div class="text-4xl font-anton md:text-6xl text-justify tracking-widest text-white">
           MEJIA DE GUZMAN
         </div>
-        <hr class="m-5 w-full" />
+        <hr class="m-5 w-3/4 md:w-full" />
         <div
-          class="font-montserrat text-md leading-relaxed indent-10 text-justify tracking-wide text-white"
+          class="indent-5 font-montserrat text-xs w-full md:w-full md:text-base leading-relaxed md:indent-10 text-justify tracking-wide text-white"
         >
           I'm a DOST scholar who studied Information Technology at Universidad de Dagupan. I
           excelled in creating impactful systems, like the award-winning Social Amelioration Program
@@ -26,7 +28,7 @@
         </div>
         <br />
         <div
-          class="font-montserrat text-md tracking-wide leading-relaxed indent-10 text-justify text-white"
+          class="indent-5 font-montserrat text-xs w-full md:w-full md:text-base tracking-wide leading-relaxed md:indent-10 text-justify text-white"
         >
           Now, I'm eager to soar even higher with your company's support. I thrive in unfamiliar
           terrain, fearlessly embracing new technologies. With 2-3 years of PHP development
@@ -34,7 +36,7 @@
           a backend developer. Let's inspire greatness together
         </div>
         <br />
-        <div class="font-montserrat mt-10 text-xs text-white">
+        <div class="font-montserrat mt-2 text-xs md:mt-10 md:text-sm text-white">
           Download Curriculum Vitae
           <a
             class="text-blue-500 tracking-widest"
@@ -44,18 +46,25 @@
           >.
         </div>
       </div>
-      <div class="w-1/2 h-56">
+
+      <div class="w-1/2 h-56 absolute md:relative">
         <div
-          class="un-photo border border-1 w-full h-full fixed"
-          style="background-image: url('https://res.cloudinary.com/dwhyxh1zm/image/upload/v1695708038/my-pic_h9pcya.png'); --row-total: 5"
+          class="un-photo border border-1 w-full h-full md:fixed"
+          style="
+            background-image: url('https://res.cloudinary.com/dwhyxh1zm/image/upload/v1695708038/my-pic_h9pcya.png');
+            --row-total: 5;
+          "
         >
-          <img class="h-[60%] right-0 fixed" src="../assets/my-pic.png" />
+          <img
+            class="h-[15%] right-0 bottom-12 md:h-[60%] md:right-0 fixed md:sticky"
+            src="../assets/my-pic.png"
+          />
 
           <div class="un-photo__popup">
             <img src="../assets/my-pic.png" alt="pic" />
             <div class="un-photo__row" style="--row-index: 0; --random: 0.23">
               <div class="un-photo__row-inner">
-                <div class="text-5xl font-bold text-white p-5 bg-[#181a1b] w-3/4">
+                <div class="text-xs p-1 md:text-5xl font-bold text-white md:p-5 bg-[#181a1b] w-3/4">
                   Web Developer
                 </div>
               </div>
@@ -78,6 +87,10 @@
     </div>
   </div>
   <!-- 3rd flex -->
+  <div class="flex flex-col-reverse md:flex-row">
+    <div class="h-12 w-full hidden md:block md:h-56"></div>
+    <div class="h-12 w-full hidden md:block md:h-56"></div>
+  </div>
 </template>
 <style>
 body {
@@ -133,7 +146,7 @@ body {
   position: fixed;
   display: inline-block;
   width: 80%;
-  max-width: 600px;
+  max-width: 40%;
   max-height: 90vh;
   top: 50%;
   left: 50%;
@@ -230,6 +243,12 @@ body {
   }
   75% {
     transform: translate(10%, 5%) scale(0.9);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-col-reverse {
+    flex-direction: column-reverse; /* Reverse the order of columns */
   }
 }
 </style>
