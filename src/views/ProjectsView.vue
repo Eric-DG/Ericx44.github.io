@@ -3,76 +3,62 @@ import { onMounted, ref } from 'vue';
 import { initFlowbite } from 'flowbite';
 import AnimatedBackground from '@/components/AnimatedBackground.vue';
 import MouseLight from '@/components/MouseLight.vue';
-import DirectionAware from '../components/ProjectsView/DirectionAware.vue';
+import DirectionAware from '@/components/ProjectsView/DirectionAware.vue';
+import phdreamin from '@/assets/phdreamin.jpeg';
+import codeCascadia from '@/assets/code-cascadia.jpeg';
+import buudl from '@/assets/buudl.png';
+import shofinet from '@/assets/shofinet.jpeg';
+import getdmit3d from '@/assets/getdmit3d.jpg';
 
+
+
+// ✅ Fixed Image Paths
 const projects = ref([
   {
-    title: "PH Dreamin' 2025 registration system",
+    title: "PH Dreamin' 2025 Registration System",
     description: "Developed a registration system for the PH Dreamin' 2025 Salesforce event.",
     date: "2025",
     position: "left",
-    image: "../src/assets/phdreamin.jpeg",
+    image: phdreamin,
   },
   {
-    title: "Code Cascadia Game App (You can check it on https://code-cascadia.onrender.com/)",
-    description: "Developed full-stack solutions integrating VueJs, Render, Docker and Laravel.",
+    title: "Code Cascadia Game App",
+    description: "Developed full-stack solutions integrating VueJs, Render, Docker, and Laravel.",
     date: "2025",
     position: "right",
-    image: "../src/assets/code-cascadia.jpeg",
+    image: codeCascadia,
   },
   {
-    title: "Buudl Web and App (Check the App on Playstore)",
-    description: "Lead and Developed full-stack solutions integrating Chakra UI, NextJS, and AWS. Role: Sofware Engineer, Team Lead",
+    title: "Buudl Web and App",
+    description: "Lead Developer integrating Chakra UI, NextJS, and AWS. Role: Software Engineer, Team Lead.",
     date: "2024",
     position: "left",
-    image: "../src/assets/buudl.png",
+    image: buudl,
   },
   {
     title: "Shofinet",
     description: "Designed a scalable e-commerce platform with seamless product management.",
     date: "2024",
     position: "right",
-    image: "../src/assets/shofinet.jpeg",
+    image: shofinet,
   },
-   {
-    title: "Employee Management System",
-    description: "Implemented authentication and security features for a freelance platform.",
-    date: "2023",
-    position: "left",
- 
-  },
-  {
-    title: "Pangansari Inventory System",
-    description: "Developed an expense tracking and stock management system.",
-    date: "2023",
-    position: "right",
-  },
-  
   {
     title: "Get Dmit3D (Best Capstone Project)",
     description: "Created an AR-based Android app for learning the periodic table.",
     date: "2022",
     position: "left",
-    image: "../src/assets/getdmit3d.jpg",
-  },
-  {
-    title: "Inventory System",
-    description: "Streamlined inventory processes for international clients.",
-    date: "2022",
-    position: "right",
-
-  },
-  
+    image: getdmit3d,
+  }
 ]);
 
+// ✅ Animation when scrolling
 onMounted(() => {
   initFlowbite();
-
-  const elements = document.querySelectorAll(".timeline-item");
+  const elements = document.querySelectorAll('.timeline-item');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add('visible');
       }
     });
   }, { threshold: 0.4 });
@@ -96,13 +82,14 @@ onMounted(() => {
       <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 h-full w-2 bg-blue-500"></div>
 
       <!-- Timeline Items -->
-      <div v-for="(project, index) in projects" :key="index" 
+      <div v-for="(project, index) in projects" :key="index"
         class="timeline-item opacity-0 transition-all duration-1000 ease-in-out flex items-center"
         :class="project.position === 'left' ? 'left' : 'right'">
 
         <!-- Image Section -->
         <div v-if="project.image" class="timeline-image">
-          <img :src="project.image" :alt="project.title" class="rounded-lg shadow-lg w-40 md:w-56 transition-all duration-500 hover:scale-105">
+          <img :src="project.image" :alt="project.title"
+            class="rounded-lg shadow-lg w-40 md:w-56 transition-all duration-500 hover:scale-105">
         </div>
 
         <!-- Content Section -->
@@ -113,13 +100,14 @@ onMounted(() => {
         </div>
       </div>
     </div>
-     <div class="mt-24">
+
+    <!-- Other Projects -->
+    <div class="mt-24">
       <h2 class="text-4xl md:text-5xl font-anton border-t border-b py-5 tracking-widest text-center text-white">
         OTHER PROJECTS
       </h2>
-
-      <div class=" flex flex-row gap-10 mt-10 px-5">
-       <DirectionAware />
+      <div class="flex flex-row gap-10 mt-10 px-5">
+        <DirectionAware />
       </div>
     </div>
   </div>
