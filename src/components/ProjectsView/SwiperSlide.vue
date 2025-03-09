@@ -18,21 +18,39 @@
   >
     <swiper-slide v-for="(tech, index) in techStack" :key="index">
       <div class="tech-container">
-        <img
-          class="tech-logo"
-          :src="tech.src"
-          :alt="tech.alt"
-        />
+        <img class="tech-logo" :src="tech.src" :alt="tech.alt" />
       </div>
     </swiper-slide>
   </swiper>
 </template>
 
-
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/autoplay';
+
+// ✅ Import images explicitly
+import amazon from '@/assets/amazon.png';
+import salesforce from '@/assets/salesforce.png';
+import cloudflare from '@/assets/cloudflare.png';
+import react from '@/assets/react.png';
+import laravel from '@/assets/laravel.png';
+import angular from '@/assets/angular.png';
+import python from '@/assets/python.png';
+import java from '@/assets/java.png';
+import html5 from '@/assets/html5.png';
+import css3 from '@/assets/css3.png';
+import javascript from '@/assets/javascript.png';
+import tsLogo from '@/assets/ts-logo.png';
+import phpLogo from '@/assets/PHP-logo.svg.png';
+import mysql from '@/assets/mysql.png';
+import postgres from '@/assets/postgres.png';
+import mongodb from '@/assets/mongodb.png';
+import vuejs from '@/assets/vuejs.png';
+import nuxt from '@/assets/nuxt.png';
+import tailwindcss from '@/assets/tailwindcss.png';
+import expressjs from '@/assets/expressjs.png';
+import nodejs from '@/assets/nodejs.png';
 
 export default {
   components: {
@@ -40,30 +58,29 @@ export default {
     SwiperSlide,
   },
   setup() {
-const techStack = [
-  { src: '/images/amazon.png', alt: 'Amazon Web' },
-  { src: '/images/salesforce.png', alt: 'Salesforce' },
-  { src: '/images/cloudflare.png', alt: 'Cloudflare' },
-  { src: '/images/react.png', alt: 'React' },
-  { src: '/images/laravel.png', alt: 'Laravel' },
-  { src: '/images/angular.png', alt: 'Angular' },
-  { src: '/images/python.png', alt: 'Python' },
-  { src: '/images/java.png', alt: 'Java' },
-  { src: '/images/html5.png', alt: 'HTML5' },
-  { src: '/images/css3.png', alt: 'CSS3' },
-  { src: '/images/javascript.png', alt: 'JavaScript' },
-  { src: '/images/ts-logo.png', alt: 'TypeScript' },
-  { src: '/images/PHP-logo.svg.png', alt: 'PHP' },
-  { src: '/images/mysql.png', alt: 'MySQL' },
-  { src: '/images/postgres.png', alt: 'PostgreSQL' },
-  { src: '/images/mongodb.png', alt: 'MongoDB' },
-  { src: '/images/vuejs.png', alt: 'Vue.js' },
-  { src: '/images/nuxt.png', alt: 'Nuxt.js' },
-  { src: '/images/tailwindcss.png', alt: 'Tailwind CSS' },
-  { src: '/images/expressjs.png', alt: 'Express.js' },
-  { src: '/images/nodejs.png', alt: 'Node.js' },
-];
-
+    const techStack = [
+      { src: amazon, alt: 'Amazon Web' },
+      { src: salesforce, alt: 'Salesforce' },
+      { src: cloudflare, alt: 'Cloudflare' },
+      { src: react, alt: 'React' },
+      { src: laravel, alt: 'Laravel' },
+      { src: angular, alt: 'Angular' },
+      { src: python, alt: 'Python' },
+      { src: java, alt: 'Java' },
+      { src: html5, alt: 'HTML5' },
+      { src: css3, alt: 'CSS3' },
+      { src: javascript, alt: 'JavaScript' },
+      { src: tsLogo, alt: 'TypeScript' },
+      { src: phpLogo, alt: 'PHP' },
+      { src: mysql, alt: 'MySQL' },
+      { src: postgres, alt: 'PostgreSQL' },
+      { src: mongodb, alt: 'MongoDB' },
+      { src: vuejs, alt: 'Vue.js' },
+      { src: nuxt, alt: 'Nuxt.js' },
+      { src: tailwindcss, alt: 'Tailwind CSS' },
+      { src: expressjs, alt: 'Express.js' },
+      { src: nodejs, alt: 'Node.js' },
+    ];
 
     const onSwiper = (swiper) => console.log('Swiper initialized:', swiper);
     const onSlideChange = () => console.log('Slide changed');

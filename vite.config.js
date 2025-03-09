@@ -9,11 +9,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-<<<<<<< HEAD
-   base: process.env.RENDER ? "/" : "./", // ✅ Fix for Render
-=======
-  base: process.env.RENDER ? "/" : "./", // ✅ Ensure it works for Render
->>>>>>> 460205434ca127b9e1f947f1d4940f56cc49776e
+   base: process.env.RENDER ? "/" : "./",
   build: {
     outDir: "dist",
     emptyOutDir: true,
