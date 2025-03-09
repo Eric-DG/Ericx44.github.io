@@ -41,7 +41,7 @@ export default {
   },
   setup() {
     const techStack = [
-      { src: './src/assets/amazon.png', alt: 'Amazon Web' },
+      { src: '../../assets/akada-ss.png', alt: 'Amazon Web' },
       { src: './src/assets/salesforce.png', alt: 'Salesforce' },
       { src: './src/assets/cloudflare.png', alt: 'Cloudflare' },
       { src: './src/assets/react.png', alt: 'React' },
