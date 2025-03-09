@@ -66,7 +66,7 @@
 <style>
 .container {
   position: relative;
-
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -85,6 +85,7 @@
   margin-right: 20px;
   margin-top: 35px;
   margin-bottom: 35px;
+  
 }
 .container:hover .box {
   transform: rotateY(25deg);
