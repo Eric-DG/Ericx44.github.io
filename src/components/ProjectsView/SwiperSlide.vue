@@ -40,30 +40,30 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const techStack = [
-      { src: '../../assets/akada-ss.png', alt: 'Amazon Web' },
-      { src: './src/assets/salesforce.png', alt: 'Salesforce' },
-      { src: './src/assets/cloudflare.png', alt: 'Cloudflare' },
-      { src: './src/assets/react.png', alt: 'React' },
-      { src: './src/assets/laravel.png', alt: 'Laravel' },
-      { src: './src/assets/angular.png', alt: 'Angular' },
-      { src: './src/assets/python.png', alt: 'Python' },
-      { src: './src/assets/java.png', alt: 'Java' },
-      { src: './src/assets/html5.png', alt: 'HTML5' },
-      { src: './src/assets/css3.png', alt: 'CSS3' },
-      { src: './src/assets/javascript.png', alt: 'JavaScript' },
-      { src: './src/assets/ts-logo.png', alt: 'TypeScript' },
-      { src: './src/assets/PHP-logo.svg.png', alt: 'PHP' },
-      { src: './src/assets/mysql.png', alt: 'MySQL' },
-      { src: './src/assets/postgres.png', alt: 'PostgreSQL' },
-      { src: './src/assets/mongodb.png', alt: 'MongoDB' },
-      { src: './src/assets/vuejs.png', alt: 'Vue.js' },
-      { src: './src/assets/nuxt.png', alt: 'Nuxt.js' },
-      { src: './src/assets/tailwindcss.png', alt: 'Tailwind CSS' },
-      { src: './src/assets/expressjs.png', alt: 'Express.js' },
-      { src: './src/assets/nodejs.png', alt: 'Node.js' },
+const techStack = [
+  { src: '/images/amazon.png', alt: 'Amazon Web' },
+  { src: '/images/salesforce.png', alt: 'Salesforce' },
+  { src: '/images/cloudflare.png', alt: 'Cloudflare' },
+  { src: '/images/react.png', alt: 'React' },
+  { src: '/images/laravel.png', alt: 'Laravel' },
+  { src: '/images/angular.png', alt: 'Angular' },
+  { src: '/images/python.png', alt: 'Python' },
+  { src: '/images/java.png', alt: 'Java' },
+  { src: '/images/html5.png', alt: 'HTML5' },
+  { src: '/images/css3.png', alt: 'CSS3' },
+  { src: '/images/javascript.png', alt: 'JavaScript' },
+  { src: '/images/ts-logo.png', alt: 'TypeScript' },
+  { src: '/images/PHP-logo.svg.png', alt: 'PHP' },
+  { src: '/images/mysql.png', alt: 'MySQL' },
+  { src: '/images/postgres.png', alt: 'PostgreSQL' },
+  { src: '/images/mongodb.png', alt: 'MongoDB' },
+  { src: '/images/vuejs.png', alt: 'Vue.js' },
+  { src: '/images/nuxt.png', alt: 'Nuxt.js' },
+  { src: '/images/tailwindcss.png', alt: 'Tailwind CSS' },
+  { src: '/images/expressjs.png', alt: 'Express.js' },
+  { src: '/images/nodejs.png', alt: 'Node.js' },
+];
 
-    ];
 
     const onSwiper = (swiper) => console.log('Swiper initialized:', swiper);
     const onSlideChange = () => console.log('Slide changed');
