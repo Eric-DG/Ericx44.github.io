@@ -9,7 +9,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: process.env.NODE_ENV === "production" ? "/Ericx44.github.io/" : "/", 
+  base: process.env.RENDER ? "/" : "./", // ✅ Ensure it works for Render
   build: {
     outDir: "dist",
     emptyOutDir: true,
